@@ -7,7 +7,7 @@ const Featured = () => {
     return (
         <div className="py-16">
             <div>
-                <h2 className="text-4xl font-semibold text-center">Featured Bikes</h2>
+                <h2 className="text-5xl font-semibold text-center">Featured Bikes</h2>
             </div>
             <ReactSwiper
                 slidesPerView={4}
