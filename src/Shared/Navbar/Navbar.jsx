@@ -31,7 +31,7 @@ const Navbar = () => {
                             {navlinks}
                         </ul>
                     </div>
-                    <a className="text-xl"><img src="https://i.ibb.co/3RnM74k/view-motorcycle-garage-warehouse-23-2150704669.jpg" alt="" className="h-14 rounded-md w-20" /></a>
+                    <a className="text-xl flex gap-2 items-center"><img src="https://i.ibb.co/3RnM74k/view-motorcycle-garage-warehouse-23-2150704669.jpg" alt="" className="h-14 rounded-md w-20" /><span className="text-4xl font-semibold">Bike Boulevard</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal text-lg px-1">

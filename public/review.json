@@ -1,0 +1,38 @@
+[
+    {
+        "ReviewerName": "John Doe",
+        "Review": "Excellent service and great selection of bikes! The staff was very helpful in guiding me through the various models and options. I ended up with the perfect bike for my needs and couldn't be happier with my purchase. Highly recommend this shop to any bike enthusiast.",
+        "Rating": 5,
+        "Image": "https://i.ibb.co/dQpkt5j/serious-readhead-bearded-man-white-tshirt-holding-folder-pen-171337-7855.jpg"
+    },
+    {
+        "ReviewerName": "Jane Smith",
+        "Review": "Knowledgeable staff and fair prices. Highly recommended! I was impressed with the variety of bikes available and the staff's expertise. They took the time to answer all my questions and helped me find the best bike within my budget. I'll definitely be coming back for all my biking needs.",
+        "Rating": 4,
+        "Image": "https://i.ibb.co/B2Mq1pc/handsome-mature-businessman-looking-confident-smiling-176420-31691.jpg"
+    },
+    {
+        "ReviewerName": "Mike Johnson",
+        "Review": "Fast delivery and the bike arrived in perfect condition. The whole process from ordering to delivery was smooth and hassle-free. The bike itself is fantastic, exactly as described, and performs exceptionally well. I would definitely recommend this shop to anyone looking for a quality bike.",
+        "Rating": 5,
+        "Image": "https://i.ibb.co/8s15CCs/handsome-young-businessman-working-office-1301-3916.jpg"
+    },
+    {
+        "ReviewerName": "Emily Brown",
+        "Review": "Had some issues with delivery timing, but customer service was helpful. Despite the delay, the staff kept me informed and were very apologetic. When the bike finally arrived, it was in excellent condition and I'm very pleased with it. The customer service really made up for the initial hiccup.",
+        "Rating": 3,
+        "Image": "https://i.ibb.co/BNmmQB1/portrait-young-man-while-studying-books-641386-449.jpg"
+    },
+    {
+        "ReviewerName": "David Wilson",
+        "Review": "Great prices on accessories and quick response to inquiries. I needed some specific parts and accessories for my bike and found everything I needed at this shop. The prices were very reasonable and the quality is top-notch. The staff was also very responsive and helpful with my questions.",
+        "Rating": 4,
+        "Image": "https://i.ibb.co/3pMP8mf/thoughtful-businessman-sitting-office-desk-writing-trying-think-up-idea-squinting-as-pondering-new-c.jpg"
+    },
+    {
+        "ReviewerName": "Sarah Taylor",
+        "Review": "Friendly staff and a wide range of bikes to choose from. I was really impressed with the selection and the staff's willingness to help. They took the time to understand my needs and recommended the perfect bike for me. The whole experience was pleasant and I felt valued as a customer.",
+        "Rating": 4,
+        "Image": "https://i.ibb.co/yn6MXzr/portrait-concentrated-redhead-man-writing-notebook-171337-9861.jpg"
+    }
+]
