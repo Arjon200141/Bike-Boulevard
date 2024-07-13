@@ -40,7 +40,8 @@ const Bikes = () => {
     return (
         <div className="mx-12 my-16">
             <div>
-                <h2 className="text-5xl font-semibold text-center mb-12">Explore Our Bike Collection</h2>
+                <h2 className="text-5xl font-semibold text-center mb-4">Our Bikes</h2>
+                <p className="text-lg text-center mx-16 mb-12"> Discover a wide range of motorbikes with detailed specifications, features, and prices. Browse through our extensive selection to find the perfect ride that matches your style and needs. </p>
             </div>
             <div className="flex gap-12 justify-center items-center mb-8">
                 <input

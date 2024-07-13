@@ -40,8 +40,9 @@ const Navbar = () => {
                         {navlinks}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn bg-lime-300 shadow-xl text-2xl font-semibold px-6 h-10">Log In</a>
+                <div className="navbar-end gap-4">
+                    <a className="btn bg-violet-300 shadow-xl text-2xl font-semibold px-6 h-10">Register</a>
+                    <a className="btn bg-sky-300 shadow-xl text-2xl font-semibold px-6 h-10">Log In</a>
                 </div>
             </div>
         </div>

@@ -6,7 +6,8 @@
         "warranty": "2 years",
         "details": "Lightweight, aerodynamic design with advanced ventilation.",
         "price_usd": 59.99,
-        "rating": 4.8
+        "rating": 4.8,
+        "image": "https://i.ibb.co/2yL7rBV/id1.jpg"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "warranty": "1 year",
         "details": "Heavy-duty U-lock with anti-theft protection.",
         "price_usd": 45.99,
-        "rating": 4.6
+        "rating": 4.6,
+        "image": "https://i.ibb.co/jypYfsT/id2.jpg"
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "warranty": "1 year",
         "details": "High-powered front and rear lights with multiple modes.",
         "price_usd": 39.99,
-        "rating": 4.7
+        "rating": 4.7,
+        "image":"https://i.ibb.co/4RPW5Kp/front-headlight-red-motorcycle-678386-580.jpg"
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@
         "warranty": "1 year",
         "details": "Portable and durable with a pressure gauge.",
         "price_usd": 29.99,
-        "rating": 4.5
+        "rating": 4.5,
+        "image":"https://i.ibb.co/X2HCxJs/id4.jpg"
     },
     {
         "id": 5,
@@ -42,7 +46,8 @@
         "warranty": "1 year",
         "details": "GPS-enabled with performance tracking features.",
         "price_usd": 149.99,
-        "rating": 4.9
+        "rating": 4.9,
+        "image":"https://i.ibb.co/nLZTTVc/id5.jpg"
     },
     {
         "id": 6,
@@ -51,7 +56,8 @@
         "warranty": "1 year",
         "details": "Lightweight and easy to install.",
         "price_usd": 12.99,
-        "rating": 4.4
+        "rating": 4.4,
+        "image":"https://i.ibb.co/8dnNCHg/id6.jpg"
     },
     {
         "id": 7,
@@ -60,7 +66,8 @@
         "warranty": "1 year",
         "details": "Loud and clear sound with a sleek design.",
         "price_usd": 9.99,
-        "rating": 4.2
+        "rating": 4.2,
+        "image":"https://i.ibb.co/v45yVyS/id7.jpg"
     },
     {
         "id": 8,
@@ -69,7 +76,8 @@
         "warranty": "2 years",
         "details": "Comfortable and durable leather seat.",
         "price_usd": 129.99,
-        "rating": 4.6
+        "rating": 4.6,
+        "image":"https://i.ibb.co/bPrrrzd/id8.jpg"
     },
     {
         "id": 9,
@@ -78,7 +86,8 @@
         "warranty": "1 year",
         "details": "Padded gloves for better grip and comfort.",
         "price_usd": 24.99,
-        "rating": 4.3
+        "rating": 4.3,
+        "image":"https://i.ibb.co/TtMmK7C/id9.jpg"
     },
     {
         "id": 10,
@@ -87,7 +96,8 @@
         "warranty": "1 year",
         "details": "Durable and easy to install for all-weather protection.",
         "price_usd": 34.99,
-        "rating": 4.5
+        "rating": 4.5,
+        "image":"https://i.ibb.co/nR3F1zy/id-10.jpg"
     },
     {
         "id": 11,
@@ -96,7 +106,8 @@
         "warranty": "1 year",
         "details": "Compact and spacious for essential tools.",
         "price_usd": 19.99,
-        "rating": 4.4
+        "rating": 4.4,
+        "image":"https://i.ibb.co/CWhBNkk/id11.jpg"
     },
     {
         "id": 12,
@@ -105,7 +116,8 @@
         "warranty": "1 year",
         "details": "Versatile tool with multiple functions.",
         "price_usd": 24.99,
-        "rating": 4.7
+        "rating": 4.7,
+        "image":"https://i.ibb.co/Gkky9v2/id12.jpg"
     },
     {
         "id": 13,
@@ -114,7 +126,8 @@
         "warranty": "1 year",
         "details": "Efficient and easy to use for maintaining the chain.",
         "price_usd": 18.99,
-        "rating": 4.6
+        "rating": 4.6,
+        "image":"https://i.ibb.co/9ZrxCV9/id13.jpg"
     },
     {
         "id": 14,
@@ -123,7 +136,8 @@
         "warranty": "1 year",
         "details": "Adjustable and wide-angle for better rear visibility.",
         "price_usd": 15.99,
-        "rating": 4.3
+        "rating": 4.3,
+        "image":"https://i.ibb.co/yVNgbW1/id14.jpg"
     },
     {
         "id": 15,
@@ -132,7 +146,8 @@
         "warranty": "2 years",
         "details": "Smart trainer with interactive features.",
         "price_usd": 299.99,
-        "rating": 4.8
+        "rating": 4.8,
+        "image":"https://i.ibb.co/j6Zhh15/id15.jpg"
     },
     {
         "id": 16,
@@ -141,7 +156,8 @@
         "warranty": "1 year",
         "details": "Secure and adjustable for all phone sizes.",
         "price_usd": 29.99,
-        "rating": 4.5
+        "rating": 4.5,
+        "image":"https://i.ibb.co/s3F3M6N/id16.jpg"
     },
     {
         "id": 17,
@@ -150,7 +166,8 @@
         "warranty": "2 years",
         "details": "Sturdy and easy to install for transporting bikes.",
         "price_usd": 199.99,
-        "rating": 4.7
+        "rating": 4.7,
+        "image":"https://i.ibb.co/Wk5FPv1/id17.png"
     },
     {
         "id": 18,
@@ -159,7 +176,8 @@
         "warranty": "1 year",
         "details": "Comfortable and moisture-wicking fabric.",
         "price_usd": 49.99,
-        "rating": 4.4
+        "rating": 4.4,
+        "image":"https://i.ibb.co/bszZn0y/id18.jpg"
     },
     {
         "id": 19,
@@ -168,7 +186,8 @@
         "warranty": "1 year",
         "details": "Breathable and stylish design.",
         "price_usd": 69.99,
-        "rating": 4.6
+        "rating": 4.6,
+        "image":"https://i.ibb.co/MGjsxW7/id19.jpg"
     },
     {
         "id": 20,
@@ -177,7 +196,8 @@
         "warranty": "1 year",
         "details": "UV protection with a comfortable fit.",
         "price_usd": 129.99,
-        "rating": 4.7
+        "rating": 4.7,
+        "image":"https://i.ibb.co/PwXkBfF/id20.jpg"
     },
     {
         "id": 21,
@@ -186,7 +206,8 @@
         "warranty": "1 year",
         "details": "Lightweight and convenient for long rides.",
         "price_usd": 79.99,
-        "rating": 4.5
+        "rating": 4.5,
+        "image":"https://i.ibb.co/VtVTRTB/id21.jpg"
     },
     {
         "id": 22,
@@ -195,7 +216,8 @@
         "warranty": "1 year",
         "details": "Comprehensive set for on-the-go repairs.",
         "price_usd": 39.99,
-        "rating": 4.6
+        "rating": 4.6,
+        "image":"https://i.ibb.co/sHRgSzn/id22.jpg"
     },
     {
         "id": 23,
@@ -204,7 +226,8 @@
         "warranty": "N/A",
         "details": "Efficient lubrication for a smoother ride.",
         "price_usd": 8.99,
-        "rating": 4.4
+        "rating": 4.4,
+        "image":"https://i.ibb.co/41Skpvk/id23.jpg"
     },
     {
         "id": 24,
@@ -213,7 +236,8 @@
         "warranty": "1 year",
         "details": "Sturdy and adjustable for home repairs.",
         "price_usd": 149.99,
-        "rating": 4.8
+        "rating": 4.8,
+        "image":"https://i.ibb.co/fQVfr6C/id24.jpg"
     },
     {
         "id": 25,
@@ -222,7 +246,8 @@
         "warranty": "1 year",
         "details": "Easy to install for wet weather protection.",
         "price_usd": 9.99,
-        "rating": 4.2
+        "rating": 4.2,
+        "image":"https://i.ibb.co/nndG34K/id25.jpg"
     },
     {
         "id": 26,
@@ -231,7 +256,8 @@
         "warranty": "1 year",
         "details": "High-pressure pump with a stable base.",
         "price_usd": 49.99,
-        "rating": 4.6
+        "rating": 4.6,
+        "image":"https://i.ibb.co/vB4nJWt/id26.jpg"
     },
     {
         "id": 27,
@@ -240,7 +266,8 @@
         "warranty": "1 year",
         "details": "Durable and reliable for smooth pedaling.",
         "price_usd": 69.99,
-        "rating": 4.7
+        "rating": 4.7,
+        "image":"https://i.ibb.co/kDJs5XG/id27.jpg"
     },
     {
         "id": 28,
@@ -249,7 +276,8 @@
         "warranty": "N/A",
         "details": "Compact kit for quick tire repairs.",
         "price_usd": 6.99,
-        "rating": 4.5
+        "rating": 4.5,
+        "image":"https://i.ibb.co/3sMB2cW/id28.jpg"
     },
     {
         "id": 29,
@@ -258,7 +286,8 @@
         "warranty": "1 year",
         "details": "Adjustable and sturdy for parking your bike.",
         "price_usd": 14.99,
-        "rating": 4.4
+        "rating": 4.4,
+        "image":"https://i.ibb.co/R0wtFv0/id29.jpg"
     },
     {
         "id": 30,
@@ -267,7 +296,8 @@
         "warranty": "N/A",
         "details": "Complete set for keeping your bike clean.",
         "price_usd": 29.99,
-        "rating": 4.7
+        "rating": 4.7,
+        "image":"https://i.ibb.co/Nm1LXh5/id30.jpg"
     },
     {
         "id": 31,
@@ -276,7 +306,8 @@
         "warranty": "1 year",
         "details": "Comfortable and easy to wrap.",
         "price_usd": 21.99,
-        "rating": 4.6
+        "rating": 4.6,
+        "image":"https://i.ibb.co/xHqXpkq/id31.jpg"
     },
     {
         "id": 32,
@@ -285,7 +316,8 @@
         "warranty": "1 year",
         "details": "Sturdy and easy to install for carrying loads.",
         "price_usd": 34.99,
-        "rating": 4.5
+        "rating": 4.5,
+        "image":"https://i.ibb.co/9vyhkGh/id32.jpg"
     },
     {
         "id": 33,
@@ -294,7 +326,8 @@
         "warranty": "1 year",
         "details": "Durable and lightweight for better performance.",
         "price_usd": 49.99,
-        "rating": 4.6
+        "rating": 4.6,
+        "image":"https://i.ibb.co/JksDgnC/id33.jpg"
     },
     {
         "id": 34,
@@ -303,7 +336,8 @@
         "warranty": "N/A",
         "details": "High-performance pads for better stopping power.",
         "price_usd": 19.99,
-        "rating": 4.7
+        "rating": 4.7,
+        "image":"https://i.ibb.co/hMyPW3Q/id34.jpg"
     },
     {
         "id": 35,
@@ -312,51 +346,17 @@
         "warranty": "2 years",
         "details": "Waterproof and spacious for essentials.",
         "price_usd": 89.99,
-        "rating": 4.8
+        "rating": 4.8,
+        "image":"https://i.ibb.co/XbPs6fr/id35.jpg"
     },
     {
         "id": 36,
-        "name": "Bike Dropper Post",
-        "company": "RockShox",
-        "warranty": "2 years",
-        "details": "Adjustable seat post for variable terrain.",
-        "price_usd": 299.99,
-        "rating": 4.7
-    },
-    {
-        "id": 37,
-        "name": "Bike Frame Bag",
-        "company": "Revelate Designs",
-        "warranty": "1 year",
-        "details": "Durable and spacious for bikepacking.",
-        "price_usd": 69.99,
-        "rating": 4.6
-    },
-    {
-        "id": 38,
         "name": "Bike Tires",
         "company": "Continental",
         "warranty": "1 year",
         "details": "Durable and high-traction for various terrains.",
         "price_usd": 59.99,
-        "rating": 4.7
-    },
-    {
-        "id": 39,
-        "name": "Bike Sunglasses",
-        "company": "Rudy Project",
-        "warranty": "1 year",
-        "details": "High-performance eyewear with interchangeable lenses.",
-        "price_usd": 129.99,
-        "rating": 4.7
-    },
-    {
-        "id": 40,
-        "name": "Bike Tool Bag",
-        "company": "Topeak",
-        "warranty": "1 year",
-        "details": "Compact and durable for carrying tools.",
-        "price_usd": 24.99,
-        "rating": 4.5
+        "rating": 4.7,
+        "image":"https://i.ibb.co/sbXwM6K/id36.jpg"
     }
 ]
