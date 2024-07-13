@@ -1,0 +1,362 @@
+[
+    {
+        "id": 1,
+        "name": "Bike Helmet",
+        "company": "Bell",
+        "warranty": "2 years",
+        "details": "Lightweight, aerodynamic design with advanced ventilation.",
+        "price_usd": 59.99,
+        "rating": 4.8
+    },
+    {
+        "id": 2,
+        "name": "Bike Lock",
+        "company": "Kryptonite",
+        "warranty": "1 year",
+        "details": "Heavy-duty U-lock with anti-theft protection.",
+        "price_usd": 45.99,
+        "rating": 4.6
+    },
+    {
+        "id": 3,
+        "name": "Bike Lights",
+        "company": "Cygolite",
+        "warranty": "1 year",
+        "details": "High-powered front and rear lights with multiple modes.",
+        "price_usd": 39.99,
+        "rating": 4.7
+    },
+    {
+        "id": 4,
+        "name": "Bike Pump",
+        "company": "Topeak",
+        "warranty": "1 year",
+        "details": "Portable and durable with a pressure gauge.",
+        "price_usd": 29.99,
+        "rating": 4.5
+    },
+    {
+        "id": 5,
+        "name": "Bike Computer",
+        "company": "Garmin",
+        "warranty": "1 year",
+        "details": "GPS-enabled with performance tracking features.",
+        "price_usd": 149.99,
+        "rating": 4.9
+    },
+    {
+        "id": 6,
+        "name": "Water Bottle Holder",
+        "company": "Specialized",
+        "warranty": "1 year",
+        "details": "Lightweight and easy to install.",
+        "price_usd": 12.99,
+        "rating": 4.4
+    },
+    {
+        "id": 7,
+        "name": "Bike Bell",
+        "company": "Knog",
+        "warranty": "1 year",
+        "details": "Loud and clear sound with a sleek design.",
+        "price_usd": 9.99,
+        "rating": 4.2
+    },
+    {
+        "id": 8,
+        "name": "Bike Seat",
+        "company": "Brooks",
+        "warranty": "2 years",
+        "details": "Comfortable and durable leather seat.",
+        "price_usd": 129.99,
+        "rating": 4.6
+    },
+    {
+        "id": 9,
+        "name": "Bike Gloves",
+        "company": "Giro",
+        "warranty": "1 year",
+        "details": "Padded gloves for better grip and comfort.",
+        "price_usd": 24.99,
+        "rating": 4.3
+    },
+    {
+        "id": 10,
+        "name": "Bike Fender Set",
+        "company": "SKS",
+        "warranty": "1 year",
+        "details": "Durable and easy to install for all-weather protection.",
+        "price_usd": 34.99,
+        "rating": 4.5
+    },
+    {
+        "id": 11,
+        "name": "Bike Saddle Bag",
+        "company": "Topeak",
+        "warranty": "1 year",
+        "details": "Compact and spacious for essential tools.",
+        "price_usd": 19.99,
+        "rating": 4.4
+    },
+    {
+        "id": 12,
+        "name": "Bike Multi-Tool",
+        "company": "Crankbrothers",
+        "warranty": "1 year",
+        "details": "Versatile tool with multiple functions.",
+        "price_usd": 24.99,
+        "rating": 4.7
+    },
+    {
+        "id": 13,
+        "name": "Bike Chain Cleaner",
+        "company": "Park Tool",
+        "warranty": "1 year",
+        "details": "Efficient and easy to use for maintaining the chain.",
+        "price_usd": 18.99,
+        "rating": 4.6
+    },
+    {
+        "id": 14,
+        "name": "Bike Mirror",
+        "company": "Mirrycle",
+        "warranty": "1 year",
+        "details": "Adjustable and wide-angle for better rear visibility.",
+        "price_usd": 15.99,
+        "rating": 4.3
+    },
+    {
+        "id": 15,
+        "name": "Bike Trainer",
+        "company": "Wahoo",
+        "warranty": "2 years",
+        "details": "Smart trainer with interactive features.",
+        "price_usd": 299.99,
+        "rating": 4.8
+    },
+    {
+        "id": 16,
+        "name": "Bike Phone Mount",
+        "company": "Quad Lock",
+        "warranty": "1 year",
+        "details": "Secure and adjustable for all phone sizes.",
+        "price_usd": 29.99,
+        "rating": 4.5
+    },
+    {
+        "id": 17,
+        "name": "Bike Rack",
+        "company": "Thule",
+        "warranty": "2 years",
+        "details": "Sturdy and easy to install for transporting bikes.",
+        "price_usd": 199.99,
+        "rating": 4.7
+    },
+    {
+        "id": 18,
+        "name": "Bike Shorts",
+        "company": "Pearl Izumi",
+        "warranty": "1 year",
+        "details": "Comfortable and moisture-wicking fabric.",
+        "price_usd": 49.99,
+        "rating": 4.4
+    },
+    {
+        "id": 19,
+        "name": "Bike Jersey",
+        "company": "Castelli",
+        "warranty": "1 year",
+        "details": "Breathable and stylish design.",
+        "price_usd": 69.99,
+        "rating": 4.6
+    },
+    {
+        "id": 20,
+        "name": "Bike Sunglasses",
+        "company": "Oakley",
+        "warranty": "1 year",
+        "details": "UV protection with a comfortable fit.",
+        "price_usd": 129.99,
+        "rating": 4.7
+    },
+    {
+        "id": 21,
+        "name": "Bike Hydration Pack",
+        "company": "CamelBak",
+        "warranty": "1 year",
+        "details": "Lightweight and convenient for long rides.",
+        "price_usd": 79.99,
+        "rating": 4.5
+    },
+    {
+        "id": 22,
+        "name": "Bike Tool Kit",
+        "company": "Pro Bike Tool",
+        "warranty": "1 year",
+        "details": "Comprehensive set for on-the-go repairs.",
+        "price_usd": 39.99,
+        "rating": 4.6
+    },
+    {
+        "id": 23,
+        "name": "Bike Chain Lubricant",
+        "company": "Finish Line",
+        "warranty": "N/A",
+        "details": "Efficient lubrication for a smoother ride.",
+        "price_usd": 8.99,
+        "rating": 4.4
+    },
+    {
+        "id": 24,
+        "name": "Bike Repair Stand",
+        "company": "Park Tool",
+        "warranty": "1 year",
+        "details": "Sturdy and adjustable for home repairs.",
+        "price_usd": 149.99,
+        "rating": 4.8
+    },
+    {
+        "id": 25,
+        "name": "Bike Mudguard",
+        "company": "Ass Savers",
+        "warranty": "1 year",
+        "details": "Easy to install for wet weather protection.",
+        "price_usd": 9.99,
+        "rating": 4.2
+    },
+    {
+        "id": 26,
+        "name": "Bike Floor Pump",
+        "company": "Lezyne",
+        "warranty": "1 year",
+        "details": "High-pressure pump with a stable base.",
+        "price_usd": 49.99,
+        "rating": 4.6
+    },
+    {
+        "id": 27,
+        "name": "Bike Pedals",
+        "company": "Shimano",
+        "warranty": "1 year",
+        "details": "Durable and reliable for smooth pedaling.",
+        "price_usd": 69.99,
+        "rating": 4.7
+    },
+    {
+        "id": 28,
+        "name": "Bike Tube Repair Kit",
+        "company": "Rema",
+        "warranty": "N/A",
+        "details": "Compact kit for quick tire repairs.",
+        "price_usd": 6.99,
+        "rating": 4.5
+    },
+    {
+        "id": 29,
+        "name": "Bike Kickstand",
+        "company": "BV",
+        "warranty": "1 year",
+        "details": "Adjustable and sturdy for parking your bike.",
+        "price_usd": 14.99,
+        "rating": 4.4
+    },
+    {
+        "id": 30,
+        "name": "Bike Cleaning Kit",
+        "company": "Muc-Off",
+        "warranty": "N/A",
+        "details": "Complete set for keeping your bike clean.",
+        "price_usd": 29.99,
+        "rating": 4.7
+    },
+    {
+        "id": 31,
+        "name": "Bike Handlebar Tape",
+        "company": "Lizard Skins",
+        "warranty": "1 year",
+        "details": "Comfortable and easy to wrap.",
+        "price_usd": 21.99,
+        "rating": 4.6
+    },
+    {
+        "id": 32,
+        "name": "Bike Cargo Rack",
+        "company": "Ibera",
+        "warranty": "1 year",
+        "details": "Sturdy and easy to install for carrying loads.",
+        "price_usd": 34.99,
+        "rating": 4.5
+    },
+    {
+        "id": 33,
+        "name": "Bike Chainring",
+        "company": "Race Face",
+        "warranty": "1 year",
+        "details": "Durable and lightweight for better performance.",
+        "price_usd": 49.99,
+        "rating": 4.6
+    },
+    {
+        "id": 34,
+        "name": "Bike Brake Pads",
+        "company": "SwissStop",
+        "warranty": "N/A",
+        "details": "High-performance pads for better stopping power.",
+        "price_usd": 19.99,
+        "rating": 4.7
+    },
+    {
+        "id": 35,
+        "name": "Bike Handlebar Bag",
+        "company": "Ortlieb",
+        "warranty": "2 years",
+        "details": "Waterproof and spacious for essentials.",
+        "price_usd": 89.99,
+        "rating": 4.8
+    },
+    {
+        "id": 36,
+        "name": "Bike Dropper Post",
+        "company": "RockShox",
+        "warranty": "2 years",
+        "details": "Adjustable seat post for variable terrain.",
+        "price_usd": 299.99,
+        "rating": 4.7
+    },
+    {
+        "id": 37,
+        "name": "Bike Frame Bag",
+        "company": "Revelate Designs",
+        "warranty": "1 year",
+        "details": "Durable and spacious for bikepacking.",
+        "price_usd": 69.99,
+        "rating": 4.6
+    },
+    {
+        "id": 38,
+        "name": "Bike Tires",
+        "company": "Continental",
+        "warranty": "1 year",
+        "details": "Durable and high-traction for various terrains.",
+        "price_usd": 59.99,
+        "rating": 4.7
+    },
+    {
+        "id": 39,
+        "name": "Bike Sunglasses",
+        "company": "Rudy Project",
+        "warranty": "1 year",
+        "details": "High-performance eyewear with interchangeable lenses.",
+        "price_usd": 129.99,
+        "rating": 4.7
+    },
+    {
+        "id": 40,
+        "name": "Bike Tool Bag",
+        "company": "Topeak",
+        "warranty": "1 year",
+        "details": "Compact and durable for carrying tools.",
+        "price_usd": 24.99,
+        "rating": 4.5
+    }
+]
