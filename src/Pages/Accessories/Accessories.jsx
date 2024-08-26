@@ -6,7 +6,7 @@ const Accessories = () => {
     const [searchTerm, setSearchTerm] = useState("");
 
     useEffect(() => {
-        fetch('accessories.json')
+        fetch('http://localhost:5000/accessories')
             .then(res => res.json())
             .then(data => setAccessories(data))
     }, []);

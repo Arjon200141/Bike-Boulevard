@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { IoPricetagsSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Bikes = () => {
     const [bikes, setBikes] = useState([]);
@@ -8,7 +9,7 @@ const Bikes = () => {
     const [selectedCompany, setSelectedCompany] = useState("");
 
     useEffect(() => {
-        fetch('bikes.json')
+        fetch('http://localhost:5000/bikes')
             .then(res => res.json())
             .then(data => setBikes(data))
     }, []);
@@ -81,18 +82,19 @@ const Bikes = () => {
                         <div className="card h-[550px] bg-white/25 shadow-xl">
                             <figure>
                                 <img
-                                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                                    alt="Bike" />
+                                    src={bike.image}
+                                    alt="Bike" className="h-[300px]"/>
                             </figure>
                             <div className="card-body">
                                 <h2 className="card-title">{bike.name}</h2>
                                 <p>{bike.description}</p>
-                                <div className="flex text-lg gap-16">
+                                <div className="flex text-lg gap-12">
                                     <h2><span className="font-semibold">Warranty : </span>{bike.warranty}</h2>
                                     <h2 className="flex items-center gap-3"><IoPricetagsSharp />{bike.price} $</h2>
                                 </div>
                                 <div className="card-actions flex justify-center">
-                                    <button className="btn text-xl font-semibold bg-gradient-to-r from-green-400 to-green-300 flex-1">View Details</button>
+                                    <Link to={`/bikes/${bike.id}`}>
+                                        <button className="btn text-xl font-semibold bg-gradient-to-r from-green-400 to-green-300 flex-1">View Details</button></Link>
                                     <button className="btn text-xl font-semibold bg-gradient-to-r from-sky-400 to-sky-300 flex-1">Add to Cart</button>
                                 </div>
                             </div>

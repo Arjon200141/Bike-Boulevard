@@ -8,7 +8,7 @@
         "rating": 4.9,
         "warranty": "2 years",
         "release_date": "2019-06-15",
-        "image": "https://example.com/images/kawasaki_ninja_h2r.jpg"
+        "image": "https://i.ibb.co/K98ZdRx/1.jpg"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "rating": 4.5,
         "warranty": "2 years",
         "release_date": "2017-03-20",
-        "image": "https://example.com/images/kawasaki_z900.jpg"
+        "image": "https://i.ibb.co/2PhkK7P/2.jpg"
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@
         "rating": 4.8,
         "warranty": "3 years",
         "release_date": "2020-01-10",
-        "image": "https://example.com/images/bmw_s1000rr.jpg"
+        "image": "https://i.ibb.co/tpKxPMh/3.jpg"
     },
     {
         "id": 4,
@@ -41,7 +41,7 @@
         "rating": 4.6,
         "warranty": "3 years",
         "release_date": "2019-07-05",
-        "image": "https://example.com/images/bmw_r1250gs.jpg"
+        "image": "https://i.ibb.co/GkNndtt/4.webp"
     },
     {
         "id": 5,
@@ -52,7 +52,7 @@
         "rating": 4.7,
         "warranty": "2 years",
         "release_date": "2018-05-15",
-        "image": "https://example.com/images/yamaha_r1.jpg"
+        "image": "https://i.ibb.co/m80rNDB/5.jpg"
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@
         "rating": 4.4,
         "warranty": "2 years",
         "release_date": "2016-08-20",
-        "image": "https://example.com/images/yamaha_mt09.jpg"
+        "image": "https://i.ibb.co/z63by3G/6.jpg"
     },
     {
         "id": 7,
@@ -74,7 +74,7 @@
         "rating": 4.8,
         "warranty": "3 years",
         "release_date": "2019-11-10",
-        "image": "https://example.com/images/suzuki_hayabusa.jpg"
+        "image": "https://i.ibb.co/37HZq3Q/7.jpg"
     },
     {
         "id": 8,
@@ -85,7 +85,7 @@
         "rating": 4.6,
         "warranty": "3 years",
         "release_date": "2018-09-05",
-        "image": "https://example.com/images/suzuki_gsxr1000.jpg"
+        "image": "https://i.ibb.co/0Z0cGsR/8.webp"
     },
     {
         "id": 9,
@@ -96,7 +96,7 @@
         "rating": 4.7,
         "warranty": "2 years",
         "release_date": "2020-04-15",
-        "image": "https://example.com/images/ktm_1290_super_duke_r.jpg"
+        "image": "https://i.ibb.co/smh8zTt/9.jpg"
     },
     {
         "id": 10,
@@ -107,7 +107,7 @@
         "rating": 4.4,
         "warranty": "2 years",
         "release_date": "2017-02-20",
-        "image": "https://example.com/images/ktm_390_duke.jpg"
+        "image": "https://i.ibb.co/HpjrD0P/10.jpg"
     },
     {
         "id": 11,
@@ -118,7 +118,7 @@
         "rating": 4.3,
         "warranty": "1 year",
         "release_date": "2015-05-10",
-        "image": "https://example.com/images/bajaj_pulsar_ns200.jpg"
+        "image": "https://i.ibb.co/dm7RqbD/11.jpg"
     },
     {
         "id": 12,
@@ -129,7 +129,7 @@
         "rating": 4.5,
         "warranty": "1 year",
         "release_date": "2016-11-15",
-        "image": "https://example.com/images/bajaj_dominar_400.jpg"
+        "image": "https://i.ibb.co/kxc4SnZ/12.jpg"
     },
     {
         "id": 13,
@@ -140,7 +140,7 @@
         "rating": 4.4,
         "warranty": "1 year",
         "release_date": "2017-03-10",
-        "image": "https://example.com/images/apache_rtr_200.jpg"
+        "image": "https://i.ibb.co/VtfzH8J/13.jpg"
     },
     {
         "id": 14,
@@ -151,7 +151,7 @@
         "rating": 4.5,
         "warranty": "1 year",
         "release_date": "2018-01-20",
-        "image": "https://example.com/images/apache_rr_310.jpg"
+        "image": "https://i.ibb.co/w0vdtbx/14.jpg"
     },
     {
         "id": 15,
@@ -162,7 +162,7 @@
         "rating": 4.4,
         "warranty": "2 years",
         "release_date": "2018-04-10",
-        "image": "https://example.com/images/kawasaki_z650.jpg"
+        "image": "https://i.ibb.co/TbshRGg/15.jpg"
     },
     {
         "id": 16,
@@ -173,7 +173,7 @@
         "rating": 4.5,
         "warranty": "2 years",
         "release_date": "2019-06-05",
-        "image": "https://example.com/images/kawasaki_versys_650.jpg"
+        "image": "https://i.ibb.co/DVTw295/16.jpg"
     },
     {
         "id": 17,
@@ -184,7 +184,7 @@
         "rating": 4.7,
         "warranty": "3 years",
         "release_date": "2020-02-15",
-        "image": "https://example.com/images/bmw_f850gs.jpg"
+        "image": "https://i.ibb.co/s3kj2bF/17.jpg"
     },
     {
         "id": 18,
@@ -195,7 +195,7 @@
         "rating": 4.3,
         "warranty": "3 years",
         "release_date": "2018-07-10",
-        "image": "https://example.com/images/bmw_g310r.jpg"
+        "image": "https://i.ibb.co/1br3PC6/18.webp"
     },
     {
         "id": 19,
@@ -206,7 +206,7 @@
         "rating": 4.5,
         "warranty": "2 years",
         "release_date": "2017-09-15",
-        "image": "https://example.com/images/yamaha_fz09.jpg"
+        "image": "https://i.ibb.co/z63by3G/6.jpg"
     },
     {
         "id": 20,
@@ -217,7 +217,7 @@
         "rating": 4.6,
         "warranty": "2 years",
         "release_date": "2019-03-10",
-        "image": "https://example.com/images/yamaha_mt07.jpg"
+        "image": "https://i.ibb.co/zZ6cLnN/20.jpg"
     },
     {
         "id": 21,
@@ -228,7 +228,7 @@
         "rating": 4.5,
         "warranty": "3 years",
         "release_date": "2018-08-05",
-        "image": "https://example.com/images/suzuki_sv650.jpg"
+        "image": "https://i.ibb.co/GpWYbH5/21.jpg"
     },
     {
         "id": 22,
@@ -239,7 +239,7 @@
         "rating": 4.6,
         "warranty": "3 years",
         "release_date": "2019-11-15",
-        "image": "https://example.com/images/suzuki_vstrom_650.jpg"
+        "image": "https://i.ibb.co/fdb5GKG/22.jpg"
     },
     {
         "id": 23,
@@ -250,7 +250,7 @@
         "rating": 4.5,
         "warranty": "2 years",
         "release_date": "2018-05-10",
-        "image": "https://example.com/images/ktm_790_duke.jpg"
+        "image": "https://i.ibb.co/K7yt9KT/23.jpg"
     },
     {
         "id": 24,
@@ -261,7 +261,7 @@
         "rating": 4.4,
         "warranty": "2 years",
         "release_date": "2017-02-15",
-        "image": "https://example.com/images/ktm_250_duke.jpg"
+        "image": "https://i.ibb.co/VgHBCKm/24.jpg"
     },
     {
         "id": 25,
@@ -272,7 +272,7 @@
         "rating": 4.3,
         "warranty": "1 year",
         "release_date": "2016-09-10",
-        "image": "https://example.com/images/bajaj_pulsar_rs200.jpg"
+        "image": "https://i.ibb.co/2vckvPB/25.jpg"
     },
     {
         "id": 26,
@@ -283,7 +283,7 @@
         "rating": 4.2,
         "warranty": "1 year",
         "release_date": "2015-12-15",
-        "image": "https://example.com/images/bajaj_avenger_220.jpg"
+        "image": "https://i.ibb.co/Z1dkn5G/26.png"
     },
     {
         "id": 27,
@@ -294,7 +294,7 @@
         "rating": 4.3,
         "warranty": "1 year",
         "release_date": "2016-06-10",
-        "image": "https://example.com/images/apache_rtr_160.jpg"
+        "image": "https://i.ibb.co/ryCMTQJ/27.webp"
     },
     {
         "id": 28,
@@ -305,7 +305,7 @@
         "rating": 4.4,
         "warranty": "1 year",
         "release_date": "2017-04-15",
-        "image": "https://example.com/images/apache_rtr_180.jpg"
+        "image": "https://i.ibb.co/HFp56xF/28.webp"
     },
     {
         "id": 29,
@@ -316,7 +316,7 @@
         "rating": 4.6,
         "warranty": "2 years",
         "release_date": "2018-10-10",
-        "image": "https://example.com/images/kawasaki_ninja_400.jpg"
+        "image": "https://i.ibb.co/Y2Vtxrm/29.jpg"
     },
     {
         "id": 30,
@@ -327,7 +327,7 @@
         "rating": 4.5,
         "warranty": "2 years",
         "release_date": "2017-07-05",
-        "image": "https://example.com/images/kawasaki_vulcan_s.jpg"
+        "image": "https://i.ibb.co/p4bGtqR/30.jpg"
     },
     {
         "id": 31,
@@ -338,7 +338,7 @@
         "rating": 4.7,
         "warranty": "3 years",
         "release_date": "2019-11-20",
-        "image": "https://example.com/images/bmw_r_nineT.jpg"
+        "image": "https://i.ibb.co/fDfwDy0/31.jpg"
     },
     {
         "id": 32,
@@ -349,7 +349,7 @@
         "rating": 4.6,
         "warranty": "3 years",
         "release_date": "2018-03-15",
-        "image": "https://example.com/images/bmw_f750gs.jpg"
+        "image": "https://i.ibb.co/Wt4zqHQ/32.jpg"
     },
     {
         "id": 33,
@@ -360,7 +360,7 @@
         "rating": 4.5,
         "warranty": "2 years",
         "release_date": "2017-06-10",
-        "image": "https://example.com/images/yamaha_xsr900.jpg"
+        "image": "https://i.ibb.co/dMcWhrJ/33.jpg"
     },
     {
         "id": 34,
@@ -371,7 +371,7 @@
         "rating": 4.6,
         "warranty": "2 years",
         "release_date": "2019-08-05",
-        "image": "https://example.com/images/yamaha_tracer_900.jpg"
+        "image": "https://i.ibb.co/3S5XxSL/34.jpg"
     },
     {
         "id": 35,
@@ -382,7 +382,7 @@
         "rating": 4.4,
         "warranty": "3 years",
         "release_date": "2018-11-10",
-        "image": "https://example.com/images/suzuki_drz400sm.jpg"
+        "image": "https://i.ibb.co/r2HnL63/35.webp"
     },
     {
         "id": 36,
@@ -393,7 +393,7 @@
         "rating": 4.7,
         "warranty": "3 years",
         "release_date": "2019-02-15",
-        "image": "https://example.com/images/suzuki_boulevard_m109r.jpg"
+        "image": "https://i.ibb.co/GnHtX66/36.jpg"
     },
     {
         "id": 37,
@@ -404,7 +404,7 @@
         "rating": 4.6,
         "warranty": "2 years",
         "release_date": "2018-06-10",
-        "image": "https://example.com/images/ktm_450_excf.jpg"
+        "image": "https://i.ibb.co/qmYmpx3/37.jpg"
     },
     {
         "id": 38,
@@ -415,7 +415,7 @@
         "rating": 4.7,
         "warranty": "2 years",
         "release_date": "2019-09-05",
-        "image": "https://example.com/images/ktm_690_enduro_r.jpg"
+        "image": "https://i.ibb.co/LYrP6Y3/38.jpg"
     },
     {
         "id": 39,
@@ -426,7 +426,7 @@
         "rating": 4.3,
         "warranty": "1 year",
         "release_date": "2016-02-10",
-        "image": "https://example.com/images/bajaj_pulsar_150.jpg"
+        "image": "https://i.ibb.co/qgrr9Z0/39.jpg"
     },
     {
         "id": 40,
@@ -437,7 +437,7 @@
         "rating": 4.1,
         "warranty": "1 year",
         "release_date": "2015-05-15",
-        "image": "https://example.com/images/bajaj_ct100.jpg"
+        "image": "https://i.ibb.co/kDPvd47/40.jpg"
     },
     {
         "id": 41,
@@ -448,7 +448,7 @@
         "rating": 4.4,
         "warranty": "1 year",
         "release_date": "2017-09-20",
-        "image": "https://example.com/images/apache_rtr_160_4v.jpg"
+        "image": "https://i.ibb.co/Ch9DkXB/41.jpg"
     },
     {
         "id": 42,
@@ -459,7 +459,7 @@
         "rating": 4.5,
         "warranty": "1 year",
         "release_date": "2018-12-15",
-        "image": "https://example.com/images/apache_rtr_180_abs.jpg"
+        "image": "https://i.ibb.co/Sch21R4/42.jpg"
     },
     {
         "id": 43,
@@ -470,7 +470,7 @@
         "rating": 4.6,
         "warranty": "2 years",
         "release_date": "2019-05-10",
-        "image": "https://example.com/images/kawasaki_ninja_zx6r.jpg"
+        "image": "https://i.ibb.co/wKpjTsv/43.jpg"
     },
     {
         "id": 44,
@@ -481,7 +481,7 @@
         "rating": 4.8,
         "warranty": "2 years",
         "release_date": "2020-03-15",
-        "image": "https://example.com/images/kawasaki_ninja_zx10r.jpg"
+        "image": "https://i.ibb.co/WnmCLcz/44.jpg"
     },
     {
         "id": 45,
@@ -492,7 +492,7 @@
         "rating": 4.9,
         "warranty": "3 years",
         "release_date": "2019-08-20",
-        "image": "https://example.com/images/bmw_k1600gt.jpg"
+        "image": "https://i.ibb.co/vkx89bM/45.jpg"
     },
     {
         "id": 46,
@@ -503,7 +503,7 @@
         "rating": 4.7,
         "warranty": "3 years",
         "release_date": "2018-11-10",
-        "image": "https://example.com/images/bmw_s1000xr.jpg"
+        "image": "https://i.ibb.co/dknsvb4/46.jpg"
     },
     {
         "id": 47,
@@ -514,7 +514,7 @@
         "rating": 4.8,
         "warranty": "2 years",
         "release_date": "2017-04-15",
-        "image": "https://example.com/images/yamaha_fjr1300.jpg"
+        "image": "https://i.ibb.co/c10F2LS/47.jpg"
     },
     {
         "id": 48,
@@ -525,7 +525,7 @@
         "rating": 4.6,
         "warranty": "2 years",
         "release_date": "2018-09-20",
-        "image": "https://example.com/images/yamaha_r3.jpg"
+        "image": "https://i.ibb.co/GV7gcRr/48.jpg"
     },
     {
         "id": 49,
@@ -536,7 +536,7 @@
         "rating": 4.5,
         "warranty": "3 years",
         "release_date": "2019-12-15",
-        "image": "https://example.com/images/suzuki_gsxs750.jpg"
+        "image": "https://i.ibb.co/rbDtGZX/49.jpg"
     },
     {
         "id": 50,
@@ -547,7 +547,7 @@
         "rating": 4.7,
         "warranty": "3 years",
         "release_date": "2018-05-10",
-        "image": "https://example.com/images/suzuki_rmz450.jpg"
+        "image": "https://i.ibb.co/FnWB92b/50.jpg"
     },
     {
         "id": 51,
@@ -558,7 +558,7 @@
         "rating": 4.5,
         "warranty": "2 years",
         "release_date": "2019-03-15",
-        "image": "https://example.com/images/ktm_390_adventure.jpg"
+        "image": "https://i.ibb.co/g4zGsWS/51.jpg"
     },
     {
         "id": 52,
@@ -569,7 +569,7 @@
         "rating": 4.4,
         "warranty": "2 years",
         "release_date": "2018-08-20",
-        "image": "https://example.com/images/ktm_250_adventure.jpg"
+        "image": "https://i.ibb.co/ZYHQq77/52.webp"
     },
     {
         "id": 53,
@@ -580,7 +580,7 @@
         "rating": 4.2,
         "warranty": "1 year",
         "release_date": "2016-03-10",
-        "image": "https://example.com/images/bajaj_pulsar_125.jpg"
+        "image": "https://i.ibb.co/wC9BMr9/53.jpg"
     },
     {
         "id": 54,
@@ -591,7 +591,7 @@
         "rating": 4.1,
         "warranty": "1 year",
         "release_date": "2015-10-15",
-        "image": "https://example.com/images/bajaj_discover_125.jpg"
+        "image": "https://i.ibb.co/PQGRdN2/54.png"
     },
     {
         "id": 55,
@@ -602,7 +602,7 @@
         "rating": 4.2,
         "warranty": "1 year",
         "release_date": "2016-07-10",
-        "image": "https://example.com/images/tvs_star_city_plus.jpg"
+        "image": "https://i.ibb.co/5FCL4Sw/55.webp"
     },
     {
         "id": 56,
@@ -613,7 +613,7 @@
         "rating": 4.1,
         "warranty": "1 year",
         "release_date": "2015-04-15",
-        "image": "https://example.com/images/tvs_radeon.jpg"
+        "image": "https://i.ibb.co/hW5nspH/56.jpg"
     },
     {
         "id": 57,
@@ -624,7 +624,7 @@
         "rating": 4.6,
         "warranty": "2 years",
         "release_date": "2017-10-20",
-        "image": "https://example.com/images/kawasaki_versys_650.jpg"
+        "image": "https://i.ibb.co/DVTw295/16.jpg"
     },
     {
         "id": 58,
@@ -635,7 +635,7 @@
         "rating": 4.7,
         "warranty": "2 years",
         "release_date": "2019-05-15",
-        "image": "https://example.com/images/kawasaki_z900.jpg"
+        "image": "https://i.ibb.co/LNZbvtG/58.jpg"
     },
     {
         "id": 59,
@@ -646,7 +646,7 @@
         "rating": 4.5,
         "warranty": "3 years",
         "release_date": "2018-07-20",
-        "image": "https://example.com/images/bmw_g310gs.jpg"
+        "image": "https://i.ibb.co/WKkPvMH/59.jpg"
     },
     {
         "id": 60,
@@ -657,6 +657,6 @@
         "rating": 4.8,
         "warranty": "3 years",
         "release_date": "2020-01-15",
-        "image": "https://example.com/images/bmw_s1000rr.jpg"
+        "image": "https://i.ibb.co/nDtLYcF/60.jpg"
     }
 ]
