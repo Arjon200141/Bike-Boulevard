@@ -5,14 +5,29 @@ import { Link, useNavigate } from "react-router-dom";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { AuthContext } from "./AuthProviders";
 import auth from "../../../firebase.config";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const Register = () => {
-
     const { createUser, updateUserProfile } = useContext(AuthContext);
     const [registerError, setRegisterError] = useState("");
     const navigate = useNavigate();
+    const axiosPublic = useAxiosPublic();
 
     const [user, setUser] = useState(null);
+
+    const postUserToDatabase = async (userData) => {
+        try {
+            const response = await axiosPublic.post('/users', userData);
+
+            if (response.status === 200) {
+                console.log("User added to the database successfully!");
+            } else {
+                console.error("Failed to add user to the database.");
+            }
+        } catch (error) {
+            console.error("Error during posting user to database:", error);
+        }
+    };
 
     const handleRegister = async (e) => {
         e.preventDefault();
@@ -23,12 +38,20 @@ const Register = () => {
         try {
             const result = await createUser(email, password);
             toast.success("Registration successful!");
-            navigate('/');
 
             await updateUserProfile(result.user, { displayName: name });
             console.log("Profile updated successfully!");
-        }
-        catch (error) {
+
+            // Post user data to database
+            const userData = {
+                uid: result.user.uid,
+                name: name,
+                email: email
+            };
+            await postUserToDatabase(userData);
+
+            navigate('/');
+        } catch (error) {
             console.error("Error during registration:", error);
             setRegisterError(error.message);
             toast.error(error.message);
@@ -37,21 +60,28 @@ const Register = () => {
 
     const googleProvider = new GoogleAuthProvider();
 
-
     const handleGoogleLogin = () => {
         signInWithPopup(auth, googleProvider)
-            .then(result => {
+            .then(async result => {
                 const loggedInUser = result.user;
                 setUser(loggedInUser);
                 console.log(loggedInUser);
                 toast.success("Login successful!");
-                navigate("/");
 
+                // Post user data to database
+                const userData = {
+                    uid: loggedInUser.uid,
+                    name: loggedInUser.displayName,
+                    email: loggedInUser.email
+                };
+                await postUserToDatabase(userData);
+
+                navigate("/");
             })
             .catch(error => {
                 console.error(error.message);
                 toast.error(error.message);
-            })
+            });
     }
 
     return (

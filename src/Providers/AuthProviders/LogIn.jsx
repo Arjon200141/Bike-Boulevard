@@ -3,33 +3,54 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import auth from "../../../firebase.config";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
 
 const LogIn = () => {
-
-
     const location = useLocation();
     const navigate = useNavigate();
-
     const [user, setUser] = useState(null);
+    const axiosPublic = useAxiosPublic();
+
+    const postUserToDatabase = async (userData) => {
+        try {
+            const response = await axiosPublic.post('/users', userData);
+
+            if (response.status === 200) {
+                console.log("User added to the database successfully!");
+            } else {
+                console.error("Failed to add user to the database.");
+            }
+        } catch (error) {
+            console.error("Error during posting user to database:", error);
+        }
+    };
 
     const googleProvider = new GoogleAuthProvider();
 
-
     const handleGoogleLogin = () => {
         signInWithPopup(auth, googleProvider)
-            .then(result => {
+            .then(async result => {
                 const loggedInUser = result.user;
                 setUser(loggedInUser);
                 console.log(loggedInUser);
                 toast.success("Login successful!");
-                navigate( "/")
 
+                // Post user data to database
+                const userData = {
+                    uid: loggedInUser.uid,
+                    name: loggedInUser.displayName,
+                    email: loggedInUser.email
+                };
+                await postUserToDatabase(userData);
+
+                navigate("/");
             })
             .catch(error => {
                 console.error(error.message);
                 toast.error(error.message);
-            })
+            });
     }
+
     const handleLogIn = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget)
