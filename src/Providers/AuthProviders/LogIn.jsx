@@ -1,106 +1,67 @@
-import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useState } from "react";
-import { ToastContainer, toast } from 'react-toastify';
-import auth from "../../../firebase.config";
-import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { useContext} from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import { AuthContext } from './AuthProviders';
+import SocialLogIn from './SocialLogIn';
 
 const LogIn = () => {
-    const location = useLocation();
+    const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
-    const [user, setUser] = useState(null);
-    const googleProvider = new GoogleAuthProvider();
+    const location = useLocation();
 
-    const handleGoogleLogin = () => {
-        signInWithPopup(auth, googleProvider)
+    const from = location.state?.from?.pathname || "/";
+    console.log('state in the location login page', location.state)
+
+
+    const handleLogin = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password);
+        signIn(email, password)
             .then(result => {
-                const loggedInUser = result.user;
-                setUser(loggedInUser);
-                console.log(loggedInUser);
-                toast.success("Login successful!");
-                navigate( "/")
-
-            })
-            .catch(error => {
-                console.error(error.message);
-                toast.error(error.message);
+                const user = result.user;
+                console.log(user);
+                Swal.fire({
+                    title: "Welcome Back!",
+                    text: "User Logged In Successfully!",
+                    icon: "success"
+                  });
+                navigate(from, { replace: true });
             })
     }
-    const handleLogIn = e => {
-        e.preventDefault();
-        const form = new FormData(e.currentTarget)
-        const email = form.get('email');
-        const password = form.get('password');
-        console.log("Email:", email, "Password:", password);
 
-        signInWithEmailAndPassword(auth, email, password)
-            .then(result => {
-                const loggedmailUser = result.user;
-                console.log(loggedmailUser);
-                setUser(loggedmailUser);
-                toast.success("Login successful!");
-                navigate( "/");
-            })
-            .catch(error => {
-                console.error(error)
-                toast.error(error.message);
-            })
-    }
 
     return (
-        <div className="w-full py-2 bg-sky-100">
-            <ToastContainer />
-            <div className="hero-content">
-                <div className="card shrink-0 w-full max-w-xl shadow-2xl bg-sky-200/35">
-                    <h2 className="text-3xl text-center font-semibold mt-3">Log in to your account</h2>
-                    <form onSubmit={handleLogIn} className="card-body">
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Email</span>
-                            </label>
-                            <input 
-                                type="email" 
-                                name="email" 
-                                placeholder="Your Email" 
-                                className="input input-bordered" 
-                                required 
-                            />
-                        </div>
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Password</span>
-                            </label>
-                            <input 
-                                type="password" 
-                                name="password" 
-                                placeholder="Password" 
-                                className="input input-bordered" 
-                                required 
-                            />
-                        </div>
+        <div className=''>
+            <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/sWWb5Dc/1000-F-819387038-ccl-R3-Xmknn7-Ie-Ntqv-YMd-Oug-We-Fj4-PBh3.jpg)' }}>
+                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-content text-center text-neutral-content">
+                    <div className="w-[650px] bg-white/35 rounded-xl my-12">
+                        <h2 className="mt-6 text-4xl text-black font-semibold">Log In to Your Account</h2>
+                        <form onSubmit={handleLogin} className="card-body ">
+                            <div className="form-control ">
+                                <label className="label ">
+                                    <span className="label-text text-xl">Email</span>
+                                </label>
+                                <input type="email" name="email" placeholder="Email" className="input input-bordered text-xl text-black" required />
+                            </div>
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text text-xl">Password</span>
+                                </label>
+                                <input type="password" name="password" placeholder="Password" className="input input-bordered text-xl text-black" required />
+                            </div>
 
-                        <div className="form-control mt-3">
-                            <button type="submit" className="btn bg-red-300 text-lg font-medium">
-                                Log In
-                            </button>
-                        </div>
-                    </form>
-                    <div className="divider">OR</div>
-
-                    <div className="mb-2 flex justify-center items-center gap-12">
-                        <button 
-                            onClick={handleGoogleLogin} 
-                            className="btn h-16 px-6 py-1">
-                            <img 
-                                src="https://i.ibb.co/PMh8F7x/google-symbol.png" 
-                                alt="Google Login" 
-                                className="h-10 w-10" 
-                            />
-                        </button>
+                            <div className="form-control mt-2">
+                                <input type="submit" value="Log In" className="btn bg-sky-200 text-xl font-semibold" />
+                            </div>
+                            <div className="divider">OR</div>
+                            <SocialLogIn></SocialLogIn>
+                        </form>
+                        <h3 className='mb-4 text-black text-xl '>New Here? <span className='font-bold'><Link to="/register" > Create New Account</Link></span></h3>
                     </div>
-                    <p className="text-xl font-semibold text-center mb-6">
-                        New Here? <Link to="/register" className="text-red-500">Register Now</Link>
-                    </p>
                 </div>
             </div>
         </div>

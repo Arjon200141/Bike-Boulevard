@@ -11,6 +11,8 @@ import BikeDetails from "../Layout/BikeDetails/BikeDetails";
 import LogIn from "../Providers/AuthProviders/LogIn";
 import Register from "../Providers/AuthProviders/Register";
 import PrivateRoutes from "./PrivateRoutes";
+import Cart from "../Cart/Cart";
+import Profile from "../Profile/Profile";
 
 export const router = createBrowserRouter([
     {
@@ -41,6 +43,14 @@ export const router = createBrowserRouter([
             {
                 path:"/register",
                 element:<Register></Register>
+            },
+            {
+                path:"/cart",
+                element:<Cart></Cart>
+            },
+            {
+                path:"/profile",
+                element:<Profile></Profile>
             }
         ]
     },

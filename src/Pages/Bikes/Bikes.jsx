@@ -1,12 +1,20 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { IoPricetagsSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import { AuthContext } from "../../Providers/AuthProviders/AuthProviders";
+import useAxiosSecure from "../../hooks/useAxiosSecure";
+import useCart from "../../hooks/useCart";
 
 const Bikes = () => {
     const [bikes, setBikes] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
     const [sortOrder, setSortOrder] = useState("asc");
     const [selectedCompany, setSelectedCompany] = useState("");
+    const {user} = useContext(AuthContext);
+    const axiosSecure= useAxiosSecure();
+    const [, refetch] = useCart();
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('http://localhost:5000/bikes')
@@ -37,6 +45,49 @@ const Bikes = () => {
         .sort((a, b) =>
             sortOrder === "asc" ? a.price - b.price : b.price - a.price
         );
+
+        const handleAddtoCart = bike => {
+            if (user && user.email) {
+                console.log(user.email, bike);
+                const cartItem = {
+                    cartId: bike._id,
+                    email: user.email,
+                    name:bike.name,
+                    price:bike.price,
+                    image:bike.image,
+                    company:bike.company
+                }
+                axiosSecure.post("/carts", cartItem)
+                    .then(res => {
+                        console.log(res.data);
+                        if (res.data.insertedId) {
+                            Swal.fire({
+                                position: "top-end",
+                                icon: "success",
+                                title: `${bike.name} is Added to the Cart`,
+                                showConfirmButton: false,
+                                timer: 1500
+                            });
+                            refetch();
+                        }
+                    })
+            }
+            else {
+                Swal.fire({
+                    title: "Want to Add Cart?",
+                    text: "You have to Log in to Add Products to the Cart!",
+                    icon: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "Yes, Log In!"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        navigate("/login", { state: { from: location } });
+                    }
+                });
+            }
+        }
 
     return (
         <div className="mx-12 my-16">
@@ -95,7 +146,7 @@ const Bikes = () => {
                                 <div className="card-actions flex justify-center">
                                     <Link to={`/bikes/${bike._id}`}>
                                         <button className="btn text-xl font-semibold bg-gradient-to-r from-green-400 to-green-300 flex-1">View Details</button></Link>
-                                    <button className="btn text-xl font-semibold bg-gradient-to-r from-sky-400 to-sky-300 flex-1">Add to Cart</button>
+                                    <button onClick={() => handleAddtoCart(bike)} className="btn text-xl font-semibold bg-gradient-to-r from-sky-400 to-sky-300 flex-1">Add to Cart</button>
                                 </div>
                             </div>
                         </div>

@@ -21,6 +21,8 @@ const Navbar = () => {
             <li><a href="#">Blogs</a></li>
             <li><Link to="/bikes">Bikes</Link></li>
             <li><Link to="/accessories">Accessories</Link></li>
+            <li><Link to="/cart">Cart</Link></li>
+            <li><Link to="/profile">Profile</Link></li>
         </>
     );
 

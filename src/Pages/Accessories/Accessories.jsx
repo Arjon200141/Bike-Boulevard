@@ -1,9 +1,18 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IoPricetagsSharp } from "react-icons/io5";
+import Swal from "sweetalert2";
+import { AuthContext } from "../../Providers/AuthProviders/AuthProviders";
+import useAxiosSecure from "../../hooks/useAxiosSecure";
+import useCart from "../../hooks/useCart";
+import { useNavigate } from "react-router-dom";
 
 const Accessories = () => {
     const [accessories, setAccessories] = useState([]);
     const [searchTerm, setSearchTerm] = useState("");
+    const {user} = useContext(AuthContext);
+    const axiosSecure= useAxiosSecure();
+    const [, refetch] = useCart();
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetch('http://localhost:5000/accessories')
@@ -18,6 +27,49 @@ const Accessories = () => {
     const filteredAccessories = accessories.filter(accessory =>
         accessory.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
+
+    const handleAddtoCart = bike => {
+        if (user && user.email) {
+            console.log(user.email, bike);
+            const cartItem = {
+                cartId: bike._id,
+                email: user.email,
+                name:bike.name,
+                price:bike.price_usd,
+                image:bike.image,
+                company:bike.company
+            }
+            axiosSecure.post("/carts", cartItem)
+                .then(res => {
+                    console.log(res.data);
+                    if (res.data.insertedId) {
+                        Swal.fire({
+                            position: "top-end",
+                            icon: "success",
+                            title: `${bike.name} is Added to the Cart`,
+                            showConfirmButton: false,
+                            timer: 1500
+                        });
+                        refetch();
+                    }
+                })
+        }
+        else {
+            Swal.fire({
+                title: "Want to Add Cart?",
+                text: "You have to Log in to Add Products to the Cart!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, Log In!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    navigate("/login", { state: { from: location } });
+                }
+            });
+        }
+    }
 
     return (
         <div className="mx-12 my-16">
@@ -54,7 +106,7 @@ const Accessories = () => {
                                         <h2 className="flex text-lg items-center gap-3"><IoPricetagsSharp />{accessory.price_usd} $</h2>
                                     </div>
                                     <div className="card-actions justify-end">
-                                        <button className="btn text-xl font-semibold bg-cyan-200 w-full">Add to Cart</button>
+                                        <button onClick={() => handleAddtoCart(accessory)} className="btn text-xl font-semibold bg-cyan-200 w-full">Add to Cart</button>
                                     </div>
                                 </div>
                             </div>
