@@ -10,6 +10,7 @@ import Accessories from "../Pages/Accessories/Accessories";
 import BikeDetails from "../Layout/BikeDetails/BikeDetails";
 import LogIn from "../Providers/AuthProviders/LogIn";
 import Register from "../Providers/AuthProviders/Register";
+import PrivateRoutes from "./PrivateRoutes";
 
 export const router = createBrowserRouter([
     {
@@ -26,12 +27,13 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/accessories",
-                element:<Accessories></Accessories>
+                element:<PrivateRoutes><Accessories></Accessories></PrivateRoutes>
             },
             {
-                path:"/bikes/:id",
-                element:<BikeDetails></BikeDetails>,
-            },
+                path: "/bikes/:bikeId",
+                element: <BikeDetails />,
+                loader: ({ params }) => fetch(`http://localhost:5000/bikes/${params.bikeId}`),
+            },            
             {
                 path:"/login",
                 element:<LogIn></LogIn>

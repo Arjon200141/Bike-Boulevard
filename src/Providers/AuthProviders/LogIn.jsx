@@ -9,48 +9,23 @@ const LogIn = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const [user, setUser] = useState(null);
-    const axiosPublic = useAxiosPublic();
-
-    const postUserToDatabase = async (userData) => {
-        try {
-            const response = await axiosPublic.post('/users', userData);
-
-            if (response.status === 200) {
-                console.log("User added to the database successfully!");
-            } else {
-                console.error("Failed to add user to the database.");
-            }
-        } catch (error) {
-            console.error("Error during posting user to database:", error);
-        }
-    };
-
     const googleProvider = new GoogleAuthProvider();
 
     const handleGoogleLogin = () => {
         signInWithPopup(auth, googleProvider)
-            .then(async result => {
+            .then(result => {
                 const loggedInUser = result.user;
                 setUser(loggedInUser);
                 console.log(loggedInUser);
                 toast.success("Login successful!");
+                navigate( "/")
 
-                // Post user data to database
-                const userData = {
-                    uid: loggedInUser.uid,
-                    name: loggedInUser.displayName,
-                    email: loggedInUser.email
-                };
-                await postUserToDatabase(userData);
-
-                navigate("/");
             })
             .catch(error => {
                 console.error(error.message);
                 toast.error(error.message);
-            });
+            })
     }
-
     const handleLogIn = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget)
@@ -71,36 +46,61 @@ const LogIn = () => {
                 toast.error(error.message);
             })
     }
+
     return (
         <div className="w-full py-2 bg-sky-100">
             <ToastContainer />
             <div className="hero-content">
                 <div className="card shrink-0 w-full max-w-xl shadow-2xl bg-sky-200/35">
-                    <h2 className="text-3xl text-center font-semibold mt-3 ">Log in to your account</h2>
+                    <h2 className="text-3xl text-center font-semibold mt-3">Log in to your account</h2>
                     <form onSubmit={handleLogIn} className="card-body">
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>
                             </label>
-                            <input data-aos="fade-right" type="email" name="email" placeholder="Your Email" className="input input-bordered" />
+                            <input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Your Email" 
+                                className="input input-bordered" 
+                                required 
+                            />
                         </div>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" name="password" placeholder="Password" className="input input-bordered" />
+                            <input 
+                                type="password" 
+                                name="password" 
+                                placeholder="Password" 
+                                className="input input-bordered" 
+                                required 
+                            />
                         </div>
 
                         <div className="form-control mt-3">
-                            <button className="btn bg-red-300 text-lg font-medium">Log In</button>
+                            <button type="submit" className="btn bg-red-300 text-lg font-medium">
+                                Log In
+                            </button>
                         </div>
                     </form>
                     <div className="divider">OR</div>
 
                     <div className="mb-2 flex justify-center items-center gap-12">
-                        <button onClick={handleGoogleLogin} className="btn h-16 px-6 py-1 "><img src="https://i.ibb.co/PMh8F7x/google-symbol.png" alt="" className="h-10 w-10" /> </button>
+                        <button 
+                            onClick={handleGoogleLogin} 
+                            className="btn h-16 px-6 py-1">
+                            <img 
+                                src="https://i.ibb.co/PMh8F7x/google-symbol.png" 
+                                alt="Google Login" 
+                                className="h-10 w-10" 
+                            />
+                        </button>
                     </div>
-                    <p className="text-xl font-semibold text-center mb-6">New Here ? <Link to="/register" className="text-red-500">Register Now</Link></p>
+                    <p className="text-xl font-semibold text-center mb-6">
+                        New Here? <Link to="/register" className="text-red-500">Register Now</Link>
+                    </p>
                 </div>
             </div>
         </div>

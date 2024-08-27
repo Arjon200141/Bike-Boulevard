@@ -93,7 +93,7 @@ const Bikes = () => {
                                     <h2 className="flex items-center gap-3"><IoPricetagsSharp />{bike.price} $</h2>
                                 </div>
                                 <div className="card-actions flex justify-center">
-                                    <Link to={`/bikes/${bike.id}`}>
+                                    <Link to={`/bikes/${bike._id}`}>
                                         <button className="btn text-xl font-semibold bg-gradient-to-r from-green-400 to-green-300 flex-1">View Details</button></Link>
                                     <button className="btn text-xl font-semibold bg-gradient-to-r from-sky-400 to-sky-300 flex-1">Add to Cart</button>
                                 </div>

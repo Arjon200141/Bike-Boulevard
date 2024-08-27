@@ -13,44 +13,33 @@ const Register = () => {
     const navigate = useNavigate();
     const axiosPublic = useAxiosPublic();
 
-    const [user, setUser] = useState(null);
-
-    const postUserToDatabase = async (userData) => {
-        try {
-            const response = await axiosPublic.post('/users', userData);
-
-            if (response.status === 200) {
-                console.log("User added to the database successfully!");
-            } else {
-                console.error("Failed to add user to the database.");
-            }
-        } catch (error) {
-            console.error("Error during posting user to database:", error);
-        }
-    };
-
     const handleRegister = async (e) => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
         const name = form.get('name');
         const email = form.get('email');
         const password = form.get('password');
+
         try {
             const result = await createUser(email, password);
-            toast.success("Registration successful!");
-
             await updateUserProfile(result.user, { displayName: name });
             console.log("Profile updated successfully!");
 
-            // Post user data to database
-            const userData = {
+            axiosPublic.post('/users', {
                 uid: result.user.uid,
                 name: name,
                 email: email
-            };
-            await postUserToDatabase(userData);
+            })
+                .then(response => {
+                    console.log("User added to backend:", response.data);
+                    toast.success("Registration successful!");
+                    navigate('/');
+                })
+                .catch(error => {
+                    console.error("Error adding user to backend:", error);
+                    toast.error("Failed to register user. Please try again.");
+                });
 
-            navigate('/');
         } catch (error) {
             console.error("Error during registration:", error);
             setRegisterError(error.message);
@@ -62,26 +51,31 @@ const Register = () => {
 
     const handleGoogleLogin = () => {
         signInWithPopup(auth, googleProvider)
-            .then(async result => {
+            .then(result => {
                 const loggedInUser = result.user;
-                setUser(loggedInUser);
                 console.log(loggedInUser);
-                toast.success("Login successful!");
 
-                // Post user data to database
-                const userData = {
+                axiosPublic.post('/users', {
                     uid: loggedInUser.uid,
                     name: loggedInUser.displayName,
                     email: loggedInUser.email
-                };
-                await postUserToDatabase(userData);
+                })
+                    .then(response => {
+                        console.log("Google user added to backend:", response.data);
+                        toast.success("Login successful!");
+                        navigate("/");
+                    })
+                    .catch(error => {
+                        console.error("Error adding Google user to backend:", error);
+                        toast.error("Failed to log in with Google. Please try again.");
+                        navigate("/")
+                    });
 
-                navigate("/");
             })
             .catch(error => {
                 console.error(error.message);
                 toast.error(error.message);
-            });
+            })
     }
 
     return (
@@ -120,7 +114,9 @@ const Register = () => {
                     <div className="divider">OR</div>
 
                     <div className="mb-2 flex justify-center items-center gap-12">
-                        <button onClick={handleGoogleLogin} className="btn h-16 px-6 py-1 "><img src="https://i.ibb.co/PMh8F7x/google-symbol.png" alt="" className="h-10 w-10" /> </button>
+                        <button onClick={handleGoogleLogin} className="btn h-16 px-6 py-1 ">
+                            <img src="https://i.ibb.co/PMh8F7x/google-symbol.png" alt="Google" className="h-10 w-10" />
+                        </button>
                     </div>
                     <p className="text-xl font-semibold text-center mb-6">Already Have an Account? <Link to="/login" className="text-red-500">Log In</Link></p>
                 </div>
