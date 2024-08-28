@@ -13,6 +13,11 @@ import Register from "../Providers/AuthProviders/Register";
 import PrivateRoutes from "./PrivateRoutes";
 import Cart from "../Cart/Cart";
 import Profile from "../Profile/Profile";
+import About from "../Pages/About";
+import Customers from "../Pages/Customers";
+import AdminRoutes from "./AdminRoutes";
+import Products from "../Pages/Products";
+import Orders from "../Pages/Orders";
 
 export const router = createBrowserRouter([
     {
@@ -29,7 +34,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:"/accessories",
-                element:<PrivateRoutes><Accessories></Accessories></PrivateRoutes>
+                element:<Accessories></Accessories>
             },
             {
                 path: "/bikes/:bikeId",
@@ -51,6 +56,22 @@ export const router = createBrowserRouter([
             {
                 path:"/profile",
                 element:<Profile></Profile>
+            },
+            {
+                path:"/about",
+                element:<About></About>
+            },
+            {
+                path:"/users",
+                element:<AdminRoutes><Customers></Customers></AdminRoutes>,
+            },
+            {
+                path:"/products",
+                element:<AdminRoutes><Products></Products></AdminRoutes>
+            },
+            {
+                path:"/orders",
+                element:<AdminRoutes><Orders></Orders></AdminRoutes>
             }
         ]
     },

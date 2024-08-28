@@ -18,11 +18,36 @@ const Navbar = () => {
     const navlinks = (
         <>
             <li><Link to="/">Home</Link></li>
-            <li><a href="#">Blogs</a></li>
-            <li><Link to="/bikes">Bikes</Link></li>
-            <li><Link to="/accessories">Accessories</Link></li>
-            <li><Link to="/cart">Cart</Link></li>
-            <li><Link to="/profile">Profile</Link></li>
+            
+            {
+                isAdmin? <div></div>
+                :
+                <li><Link to="/bikes">Bikes</Link></li>
+            }
+            {
+                isAdmin? <div></div>
+                :
+                <li><Link to="/accessories">Accessories</Link></li>
+            }
+            {
+                user && !isAdmin && <li><Link to="/cart">Cart</Link></li>
+            }
+            {
+                user && isAdmin && <li><Link to="/users">Customers</Link></li>
+            }
+            {
+                user && isAdmin && <li><Link to="/products">Products</Link></li>
+            }
+            {
+                user && isAdmin && <li><Link to="/orders">Orders</Link></li>
+            }
+            {
+                user && <li><Link to="/profile">Profile</Link></li>
+            }
+            {
+                !user && <li><Link to="/about">About Us</Link></li>
+            }
+            
         </>
     );
 
@@ -47,7 +72,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="menu gap-2 menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                             {navlinks}
                         </ul>
                     </div>
@@ -57,7 +82,7 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal text-lg px-1">
+                    <ul className="menu menu-horizontal text-lg gap-2 px-1">
                         {navlinks}
                     </ul>
                 </div>
